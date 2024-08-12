@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Base URL for your API
-const API_URL = import.meta.env.APIURL; // Adjust to your server URL
+const API_URL = 'https://aws.kartheesan.online'; // Adjust to your server URL
 
 // Get all questions
 export const fetchQuestions = async () => {
