@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+
+body {
+  font-family: "DM Sans", sans-serif;
+
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.maincontainer {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #cfe9d9;
+  gap: 20px;
+
+  h1{
+    font-size: 50px;
+  }
+
+  .buttons {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    button {
+      border: none;
+      padding: 15px 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .add-form {
+    h2{
+      text-align: center;
+    }
+  }
+
+
+}
+
+#addbutton {
+  
+  border: none;
+      padding: 15px 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
