@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 // import { useState } from "react";
-import "./flipCard.scss";
+import "./flipcard.scss";
 
 function QuestionCard({ question, answer, isFlipped, handleFlip }) {
   
