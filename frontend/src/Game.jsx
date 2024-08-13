@@ -1,7 +1,7 @@
 import "./App.scss";
 import QuestionCard from "./components/QuestionCard";
 import { useState, useEffect } from "react";
-import { fetchQuestions } from "./lib/utils"; // Import the fetchQuestions function
+import { fetchQuestions } from "./utilfolder/utils"; // Import the fetchQuestions function
 
 const Game = () => {
   const [questions, setQuestions] = useState([]);
