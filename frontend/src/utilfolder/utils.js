@@ -1,9 +1,7 @@
 import axios from "axios";
 
-// Base URL for your API
 const API_URL = import.meta.env.VITE_APIURL;
 
-// Get all questions
 export const fetchQuestions = async () => {
   try {
     const response = await axios.get(`${API_URL}/questions`);
@@ -16,7 +14,6 @@ export const fetchQuestions = async () => {
   }
 };
 
-// Add a new question
 export const addQuestion = async (questionData) => {
   try {
     const response = await axios.post(`${API_URL}/questions`, questionData);
@@ -28,7 +25,6 @@ export const addQuestion = async (questionData) => {
   }
 };
 
-// Update an existing question
 export const updateQuestion = async (id, updatedData) => {
   try {
     const response = await axios.patch(
@@ -42,7 +38,6 @@ export const updateQuestion = async (id, updatedData) => {
   }
 };
 
-// Delete a question
 export const deleteQuestion = async (id) => {
   try {
     const response = await axios.delete(`${API_URL}/questions/${id}`);
