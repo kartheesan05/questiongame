@@ -1,12 +1,13 @@
 import axios from "axios";
 
 // Base URL for your API
-const API_URL = 'http://localhost:80'; // Adjust to your server URL
+const API_URL = import.meta.env.VITE_APIURL;
 
 // Get all questions
 export const fetchQuestions = async () => {
   try {
     const response = await axios.get(`${API_URL}/questions`);
+    console.log(import.meta.env.TEST)
     return response.data;
   } catch (error) {
     console.error("Error fetching questions:", error);
