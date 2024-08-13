@@ -6,7 +6,7 @@ import {
   addQuestion,
   updateQuestion,
   deleteQuestion,
-} from "./lib/utils"; // Import functions
+} from "./utilfolder/utils"; // Import functions
 
 const Admin = () => {
   const [questions, setQuestions] = useState([]);
